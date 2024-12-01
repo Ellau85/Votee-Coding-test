@@ -3,10 +3,13 @@ import random
 import requests
 import datetime
 
+# Replace wit your OpenAI API Key
 API_KEY = 'your_openai_api_key'
 
+# List of possible words to guess
 word_list = ['apple', 'banana', 'cherry', 'date', 'elderberry', 'fig', 'grape'] 
 
+# Functions to get the daily word
 def get_daily_word ():
 # Seed random number generator for reproducibility
 random.seed(datetime.date.today())
